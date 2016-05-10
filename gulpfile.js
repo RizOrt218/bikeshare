@@ -3,11 +3,11 @@ var sass    = require('gulp-sass');
 var connect = require('gulp-connect');
 var nodemon = require('gulp-nodemon');
 
-gulp.task('start', function () {
-  nodemon({
-    script : 'server.js'
-  });
-});
+// gulp.task('start', function () {
+//   nodemon({
+//     script : 'server.js'
+//   });
+// });
 
 gulp.task('connect', function(){
   connect.server({
@@ -32,4 +32,4 @@ gulp.task('watch', function() {
    gulp.watch('./public/**/*', ['livereload']);
 });
 
-gulp.task('default', ['connect','sass','watch', 'start']);
+gulp.task('default', ['connect','sass','watch']);
