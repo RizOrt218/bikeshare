@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RizOrt218/bikeshare#readme",
   "dependencies": {
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",
     "gulp-livereload": "^3.8.1",
