@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngRoute'])
+angular.module('myApp', ['ngRoute', 'myApp.controllers'])
 
   .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
@@ -21,8 +21,8 @@ angular.module('myApp', ['ngRoute'])
           // controller : 'BooksController'
         })
         .when('/siteMap', {
-          templateUrl : 'views/siteMap.html'
-          // controller : 'MoviesController'
+          templateUrl : 'views/siteMap.html',
+          controller : 'MapCtrl'
         })
         .when('/feedback', {
           templateUrl : 'views/feedback.html'
@@ -34,7 +34,3 @@ angular.module('myApp', ['ngRoute'])
 
 
   }]);
-
-function MainCtrl($scope) {
-
-}
